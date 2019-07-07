@@ -1,3 +1,131 @@
 body{
-    background: linear-gradient(black white);
+    background: linear-gradient( 135deg,red ,20%,white,blue);
+    width: 100vh;
+    height: 100vh;
+}
+.roster{
+    width:50%;
+
+}
+.ship{
+    width:50%;
+    float: left;
+}
+.set{
+ position: absolute;
+ width:100%;
+ height: 100%;
+ left:0%;
+}
+#red {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.6em;
+    box-sizing: content-box;
+    height: 0.6em;
+    border: 0.07em solid red;
+    position: relative;
+    border-radius: 0.35em;
+  }
+  #black {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.6em;
+    box-sizing: content-box;
+    height: 0.6em;
+    border: 0.07em solid black;
+    position: relative;
+    border-radius: 0.35em;
+  }
+  #cyan {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.6em;
+    box-sizing: content-box;
+    height: 0.6em;
+    border: 0.07em solid cyan;
+    position: relative;
+    border-radius: 0.35em;
+  }
+  #green {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.6em;
+    box-sizing: content-box;
+    height: 0.6em;
+    border: 0.07em solid green;
+    position: relative;
+    border-radius: 0.35em;
+  }
+  #yellow {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.6em;
+    box-sizing: content-box;
+    height: 0.6em;
+    border: 0.07em solid yellow;
+    position: relative;
+    border-radius: 0.35em;
+  }
+.set div {
+    position: absolute;
+    display: block;
+}
+.set div:nth-child(1){
+    left: 65%;
+    top:-60%;
+    animation: animate 15s linear infinite;
+}
+.set div:nth-child(2){
+    left: 48%;
+    top:-60%;
+    animation: animate 15s linear infinite;
+}
+.set div:nth-child(3){
+    left: 31%;
+    top:-60%;
+    animation: animate 15s linear infinite;
+}
+.set div:nth-child(4){
+    left: 35%;
+    top:-50%;
+    animation: animate 15s linear infinite;
+}
+.set div:nth-child(5){
+    
+    left: 18%;
+    top:-50%;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        opacity: 20%;
+    }
+    10%
+    {
+        opacity: 40%;
+    }
+    20%
+    {
+        opacity: 60%;
+    }
+    40%
+    {
+        opacity: 80%;
+    }
+    60%
+    {
+        opacity: 100%;
+    }
+    80%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        top:110%;
+    }
 }

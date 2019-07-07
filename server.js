@@ -4,7 +4,7 @@ var PORT = process.env.PORT || 1001;
 
 var app = express();
 
-app.use(express.static("public"));
+app.use("/public",express.static("public"));
 
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
